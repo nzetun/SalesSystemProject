@@ -1,8 +1,5 @@
-#Noah Zetocha
-#Joel Bargen
-jbargen
-nzetocha
+Noah Zetocha  
+Joel Bargen
 
+nzetocha2@unl.edu
 
-85369190  
-nzetocha2@unl.edu  
