@@ -64,6 +64,10 @@ public class GUI implements ActionListener{
 	private List<Person> persons;
 	private List<Store> stores;
 	
+	/**
+	* @author Noah Zetocha
+	* Simple JFrame GUI to represent aspects of business logic for sales system.
+	**/
 	public GUI() {
 		
 		loadDatabaseApp();
@@ -156,12 +160,10 @@ public class GUI implements ActionListener{
 		frame.setVisible(true);
 		
 	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		
-	}
 	
+	/**
+	* Button for returning to Home screen.
+	**/
 	public JButton homeButton() {
 		JButton home = new JButton("Home");
 		home.setBackground(Color.WHITE);
@@ -182,6 +184,9 @@ public class GUI implements ActionListener{
 		return home;
 	}
 	
+	/**
+	* Button for going to new sale pane.
+	**/
 	public JButton saleButton() {
 		buttonSale = new JButton("New Sale");
 		buttonSale.setBackground(Color.WHITE);
@@ -251,6 +256,9 @@ public class GUI implements ActionListener{
 		return buttonSale;
 	}
 	
+	/**
+	* Button for going report pane.
+	**/
 	public JButton buttonReport() {
 		buttonReports = new JButton("Simple Sale Reports");
 		buttonReports.setBackground(Color.WHITE);
@@ -280,6 +288,9 @@ public class GUI implements ActionListener{
 		return buttonReports;
 	}
 	
+	/**
+	* Button for going to sales made pane, showing list of sales.
+	**/
 	public JButton salesMade() {
 		salesMadeButton = new JButton("Sale History");
 		salesMadeButton.setBackground(Color.WHITE);
@@ -304,6 +315,9 @@ public class GUI implements ActionListener{
 		return salesMadeButton;
 	}
 	
+	/**
+	* Button for showing list of people associated with store in new pane.
+	**/
 	public JButton personButton() {
 		buttonPerson = new JButton("Persons");
 		buttonPerson.setBackground(Color.WHITE);
@@ -360,6 +374,9 @@ public class GUI implements ActionListener{
 		return buttonPerson;
 	}
 	
+	/**
+	* Button for showing list of items in inventory in new pane.
+	**/
 	public JButton inventoryButton() {
 		inventoryButton = new JButton("Inventory");
 		inventoryButton.setBackground(Color.WHITE);
@@ -420,6 +437,9 @@ public class GUI implements ActionListener{
 				
 	}
 	
+	/**
+	* Button for showing list of stores in new pane.
+	**/
 	public JButton storeButton() {
 		buttonStore = new JButton("Stores");
 		buttonStore.setBackground(Color.WHITE);
@@ -481,6 +501,7 @@ public class GUI implements ActionListener{
 		return buttonStore;
 	}
 	
+	//TODO
 	public JButton enterButton() {
 //		JButton enterButton = new JButton("Persons");
 //		enterButton.setBackground(Color.WHITE);
@@ -531,7 +552,7 @@ public class GUI implements ActionListener{
 	}
 	
 	/**
-	 * 
+	 * Loads data from database for quick access within the GUI.
 	 * @return
 	 */
 	public void loadDatabaseApp() {
@@ -570,7 +591,9 @@ public class GUI implements ActionListener{
 		frameLoad.setVisible(true);
 		return frameLoad;
     }
-	
+	/**
+	* Loads home screen picture from data file.
+	**/
 	public JLabel loadGameImg() {
 		BufferedImage myPicture = null;
 		try {
