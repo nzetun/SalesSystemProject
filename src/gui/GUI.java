@@ -37,6 +37,10 @@ import list.StoreComparator;
 import person.Person;
 import sale.Sale;
 
+/**
+* @author Noah Zetocha
+* Simple JFrame GUI to represent aspects of business logic for sales system.
+**/
 public class GUI implements ActionListener{
 	
 	private JButton buttonReports;
@@ -65,8 +69,7 @@ public class GUI implements ActionListener{
 	private List<Store> stores;
 	
 	/**
-	* @author Noah Zetocha
-	* Simple JFrame GUI to represent aspects of business logic for sales system.
+	* GUI constructor.
 	**/
 	public GUI() {
 		
